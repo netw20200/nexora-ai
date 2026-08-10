@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Learn more about Nexora — an AI-powered productivity platform built for modern teams."
+    >
+
+    <title>About — Nexora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================================
+           NEXORA ABOUT PAGE
+        ========================================= */
+
+        .about-hero {
+            padding: 150px 0 100px;
+            text-align: center;
+        }
+
+        .about-hero-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .about-hero h1 {
+            margin: 25px 0;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(48px, 7vw, 88px);
+            line-height: .98;
+            letter-spacing: -0.055em;
+        }
+
+        .about-hero h1 span {
+            display: block;
+        }
+
+        .about-hero p {
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 19px;
+            line-height: 1.7;
+            color: rgba(255,255,255,.62);
+        }
+
+        .about-story {
+            padding: 80px 0;
+        }
+
+        .about-story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-story h2,
+        .about-values h2,
+        .about-cta h2 {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(38px, 5vw, 62px);
+            line-height: 1;
+            letter-spacing: -0.045em;
+            margin: 0 0 25px;
+        }
+
+        .about-story h2 span,
+        .about-values h2 span,
+        .about-cta h2 span {
+            display: block;
+        }
+
+        .about-story p {
+            color: rgba(255,255,255,.62);
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .about-visual {
+            position: relative;
+            min-height: 430px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-orb {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle at 35% 30%,
+                    #c9a7ff 0,
+                    #8655ed 28%,
+                    #35156e 60%,
+                    transparent 72%
+                );
+
+            filter: blur(.2px);
+
+            box-shadow:
+                0 0 100px rgba(139, 92, 246, .25);
+        }
+
+        .about-floating-card {
+            position: absolute;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 18px;
+            background: rgba(20,19,29,.86);
+            backdrop-filter: blur(18px);
+            box-shadow: 0 25px 60px rgba(0,0,0,.3);
+        }
+
+        .about-floating-card strong {
+            display: block;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .about-floating-card span {
+            color: rgba(255,255,255,.55);
+            font-size: 13px;
+        }
+
+        .about-floating-card.card-one {
+            top: 35px;
+            left: 5%;
+        }
+
+        .about-floating-card.card-two {
+            right: 0;
+            bottom: 55px;
+        }
+
+        .about-values {
+            padding: 100px 0;
+        }
+
+        .about-values-heading {
+            max-width: 650px;
+            margin-bottom: 55px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .value-card {
+            padding: 32px;
+            min-height: 240px;
+
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 22px;
+
+            background: rgba(255,255,255,.025);
+        }
+
+        .value-icon {
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 25px;
+
+            border-radius: 14px;
+
+            background: rgba(139,92,246,.15);
+
+            color: #b58cff;
+            font-size: 18px;
+        }
+
+        .value-card h3 {
+            margin: 0 0 12px;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 22px;
+        }
+
+        .value-card p {
+            margin: 0;
+            color: rgba(255,255,255,.55);
+            line-height: 1.7;
+        }
+
+        .about-numbers {
+            padding: 80px 0;
+        }
+
+        .about-numbers-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .about-number {
+            padding: 35px 20px;
+            text-align: center;
+
+            border-top: 1px solid rgba(255,255,255,.1);
+        }
+
+        .about-number strong {
+            display: block;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(38px, 5vw, 58px);
+            letter-spacing: -0.04em;
+        }
+
+        .about-number span {
+            color: rgba(255,255,255,.5);
+            font-size: 14px;
+        }
+
+        .about-cta {
+            padding: 100px 0 120px;
+        }
+
+        .about-cta-box {
+            position: relative;
+            overflow: hidden;
+
+            padding: 80px 40px;
+
+            text-align: center;
+
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 30px;
+
+            background:
+                radial-gradient(
+                    circle at 50% 0,
+                    rgba(139,92,246,.18),
+                    transparent 55%
+                ),
+                rgba(255,255,255,.025);
+        }
+
+        .about-cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .about-cta p {
+            max-width: 580px;
+            margin: 0 auto 30px;
+            color: rgba(255,255,255,.6);
+            line-height: 1.7;
+        }
+
+        .about-cta-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+
+            .about-hero {
+                padding: 100px 0 70px;
+            }
+
+            .about-story {
+                padding: 60px 0;
+            }
+
+            .about-story-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-visual {
+                min-height: 350px;
+            }
+
+            .about-orb {
+                width: 240px;
+                height: 240px;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-numbers-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-cta {
+                padding: 70px 0 90px;
+            }
+
+            .about-cta-box {
+                padding: 55px 20px;
+            }
+        }
+
+        @media (max-width: 420px) {
+
+            .about-floating-card.card-one {
+                left: 0;
+            }
+
+            .about-floating-card.card-two {
+                right: 0;
+            }
+
+            .about-numbers-grid {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container header-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">
+                <i class="fa-solid fa-bolt"></i>
+            </span>
+
+            <span class="logo-text">
+                Nexora
+            </span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#features">Features</a>
+
+            <a href="index.html#pricing">Pricing</a>
+
+            <a href="about.html" class="active">About</a>
+
+            <a href="index.html#faq">FAQ</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <a
+                href="index.html#pricing"
+                class="btn btn-primary btn-small"
+            >
+                Get started
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="about-hero">
+
+        <div class="container">
+
+            <div class="about-hero-content">
+
+                <span class="eyebrow">
+                    About Nexora
+                </span>
+
+                <h1>
+                    Technology should
+                    <span>work for you.</span>
+                </h1>
+
+                <p>
+                    Nexora was created to help modern teams
+                    spend less time managing repetitive work
+                    and more time creating meaningful results.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STORY -->
+
+    <section class="about-story">
+
+        <div class="container">
+
+            <div class="about-story-grid">
+
+                <div>
+
+                    <span class="eyebrow">
+                        Our approach
+                    </span>
+
+                    <h2>
+                        Less complexity.
+                        <span>More progress.</span>
+                    </h2>
+
+                    <p>
+                        Modern teams use dozens of tools every day.
+                        Information gets scattered, repetitive tasks
+                        consume valuable time and important decisions
+                        become harder than they need to be.
+                    </p>
+
+                    <p>
+                        Nexora brings intelligent automation,
+                        collaboration and insights together into
+                        one focused workspace.
+                    </p>
+
+                    <p>
+                        Our goal is simple: make powerful technology
+                        feel effortless.
+                    </p>
+
+                </div>
+
+
+                <div class="about-visual">
+
+                    <div class="about-orb"></div>
+
+                    <div class="about-floating-card card-one">
+
+                        <strong>42%</strong>
+
+                        <span>
+                            average time saved
+                        </span>
+
+                    </div>
+
+                    <div class="about-floating-card card-two">
+
+                        <strong>10k+</strong>
+
+                        <span>
+                            active users
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- VALUES -->
+
+    <section class="about-values">
+
+        <div class="container">
+
+            <div class="about-values-heading">
+
+                <span class="eyebrow">
+                    What we believe
+                </span>
+
+                <h2>
+                    Built around
+                    <span>better work.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="values-grid">
+
+                <article class="value-card">
+
+                    <div class="value-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <h3>
+                        Simplicity
+                    </h3>
+
+                    <p>
+                        Powerful products should not require
+                        complicated workflows. We remove
+                        unnecessary friction wherever possible.
+                    </p>
+
+                </article>
+
+
+                <article class="value-card">
+
+                    <div class="value-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <h3>
+                        Intelligent automation
+                    </h3>
+
+                    <p>
+                        Technology should take care of repetitive
+                        work so people can focus their attention
+                        where it creates the most value.
+                    </p>
+
+                </article>
+
+
+                <article class="value-card">
+
+                    <div class="value-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <h3>
+                        People first
+                    </h3>
+
+                    <p>
+                        Great products are built around the people
+                        who use them. Every experience starts with
+                        clarity, accessibility and human needs.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NUMBERS -->
+
+    <section class="about-numbers">
+
+        <div class="container">
+
+            <div class="about-numbers-grid">
+
+                <div class="about-number">
+
+                    <strong>10k+</strong>
+
+                    <span>
+                        Active users
+                    </span>
+
+                </div>
+
+
+                <div class="about-number">
+
+                    <strong>98.7%</strong>
+
+                    <span>
+                        Satisfaction
+                    </span>
+
+                </div>
+
+
+                <div class="about-number">
+
+                    <strong>42%</strong>
+
+                    <span>
+                        Time saved
+                    </span>
+
+                </div>
+
+
+                <div class="about-number">
+
+                    <strong>24/7</strong>
+
+                    <span>
+                        AI workflows
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="about-cta">
+
+        <div class="container">
+
+            <div class="about-cta-box">
+
+                <div class="about-cta-content">
+
+                    <span class="eyebrow">
+                        Ready to move faster?
+                    </span>
+
+                    <h2>
+                        Make room for
+                        <span>better work.</span>
+                    </h2>
+
+                    <p>
+                        Start building smarter workflows today
+                        and give your team more time for the work
+                        that really matters.
+                    </p>
+
+                    <div class="about-cta-actions">
+
+                        <a
+                            href="index.html#pricing"
+                            class="btn btn-primary"
+                        >
+                            Start for free
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a
+                            href="index.html"
+                            class="btn btn-secondary"
+                        >
+                            Back to home
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-mark">
+                        <i class="fa-solid fa-bolt"></i>
+                    </span>
+
+                    <span class="logo-text">
+                        Nexora
+                    </span>
+
+                </a>
+
+                <p>
+                    AI-powered productivity for modern teams
+                    and ambitious businesses.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div class="footer-column">
+
+                    <h4>Product</h4>
+
+                    <a href="index.html#features">
+                        Features
+                    </a>
+
+                    <a href="index.html#pricing">
+                        Pricing
+                    </a>
+
+                    <a href="index.html#demo">
+                        Demo
+                    </a>
+
+                    <a href="index.html#faq">
+                        FAQ
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Company</h4>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="#">
+                        Careers
+                    </a>
+
+                    <a href="#">
+                        Contact
+                    </a>
+
+                    <a href="#">
+                        Blog
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Legal</h4>
+
+                    <a href="#">
+                        Privacy
+                    </a>
+
+                    <a href="#">
+                        Terms
+                    </a>
+
+                    <a href="#">
+                        Security
+                    </a>
+
+                    <a href="#">
+                        Status
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span data-year></span>
+                Nexora. All rights reserved.
+            </span>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
