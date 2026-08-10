@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Page not found — Nexora."
+    >
+
+    <title>404 — Page Not Found | Nexora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .error-page {
+            min-height: calc(100vh - 90px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .error-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .error-number {
+            margin: 0;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(120px, 25vw, 280px);
+            line-height: .8;
+            letter-spacing: -.09em;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffffff 0%,
+                    rgba(255,255,255,.25) 100%
+                );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .error-content h1 {
+            margin: 45px 0 15px;
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(32px, 5vw, 52px);
+            line-height: 1;
+            letter-spacing: -.045em;
+        }
+
+        .error-content p {
+            max-width: 500px;
+            margin: 0 auto 30px;
+
+            color: rgba(255,255,255,.55);
+
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .error-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .error-icon {
+            width: 58px;
+            height: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin: 0 auto 20px;
+
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 18px;
+
+            background: rgba(139,92,246,.1);
+
+            color: #b995ff;
+            font-size: 21px;
+        }
+
+        @media (max-width: 600px) {
+
+            .error-page {
+                min-height: calc(100vh - 70px);
+                padding: 80px 20px;
+            }
+
+            .error-content h1 {
+                margin-top: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container header-container">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">
+                <i class="fa-solid fa-bolt"></i>
+            </span>
+
+            <span class="logo-text">
+                Nexora
+            </span>
+
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#features">
+                Features
+            </a>
+
+            <a href="index.html#pricing">
+                Pricing
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <a
+                href="index.html#pricing"
+                class="btn btn-primary btn-small"
+            >
+                Get started
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="error-page">
+
+        <div class="container">
+
+            <div class="error-content">
+
+                <div class="error-icon">
+                    <i class="fa-solid fa-compass"></i>
+                </div>
+
+                <div class="error-number">
+                    404
+                </div>
+
+                <h1>
+                    Looks like you're lost.
+                </h1>
+
+                <p>
+                    The page you're looking for doesn't exist,
+                    has been moved, or is no longer available.
+                    Let's get you back on track.
+                </p>
+
+                <div class="error-actions">
+
+                    <a
+                        href="index.html"
+                        class="btn btn-primary"
+                    >
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Back to home
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="btn btn-secondary"
+                    >
+                        Contact us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span data-year></span>
+                Nexora. All rights reserved.
+            </span>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
