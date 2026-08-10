@@ -1446,3 +1446,478 @@ ul {
     }
 
 }
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    .site-header {
+        padding: 14px 0;
+    }
+
+    .header-container {
+        min-height: 54px;
+    }
+
+    .logo {
+        flex-shrink: 0;
+    }
+
+    .logo-text {
+        font-size: 21px;
+    }
+
+    .header-actions {
+        margin-left: auto;
+    }
+
+    .login-link,
+    .header-actions > .btn {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 10px;
+        background: currentColor;
+        transition: 0.25s ease;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 20px;
+        right: 20px;
+
+        display: none;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 10px;
+
+        border: 1px solid rgba(255,255,255,0.10);
+        border-radius: 18px;
+
+        background: rgba(15, 14, 24, 0.97);
+
+        backdrop-filter: blur(20px);
+
+        box-shadow:
+            0 20px 50px rgba(0,0,0,0.35);
+
+        z-index: 100;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav a {
+        display: block;
+        width: 100%;
+        padding: 13px 14px;
+
+        border-radius: 10px;
+
+        font-size: 15px;
+    }
+
+    .main-nav a:hover {
+        background: rgba(255,255,255,0.06);
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-badge {
+        max-width: max-content;
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+        font-size: clamp(52px, 15vw, 76px);
+        line-height: 0.95;
+        letter-spacing: -0.055em;
+        margin-top: 28px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 1.65;
+        margin-top: 28px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-note {
+        justify-content: center;
+        margin-top: 18px;
+    }
+
+
+    /* =========================
+       DASHBOARD
+    ========================= */
+
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+        overflow: visible;
+    }
+
+    .dashboard-window {
+        width: 100%;
+        max-width: 100%;
+        transform: none;
+    }
+
+    .dashboard-content {
+        min-width: 0;
+    }
+
+    .dashboard-sidebar {
+        width: 54px;
+        flex: 0 0 54px;
+    }
+
+    .dashboard-main {
+        min-width: 0;
+        overflow: hidden;
+        padding: 18px;
+    }
+
+    .dashboard-header h3 {
+        font-size: 18px;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        min-width: 0;
+    }
+
+    .chart-card {
+        overflow: hidden;
+    }
+
+    .chart {
+        min-width: 0;
+    }
+
+    .ai-card {
+        min-width: 0;
+    }
+
+
+    /* =========================
+       TRUSTED LOGOS
+    ========================= */
+
+    .trusted-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .trusted-logos span {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    .section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .section-heading {
+        max-width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(38px, 10vw, 54px);
+        line-height: 1;
+    }
+
+    .section-heading p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+
+    /* =========================
+       FEATURES
+    ========================= */
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-large {
+        grid-column: auto;
+    }
+
+    .feature-card {
+        min-height: auto;
+    }
+
+
+    /* =========================
+       HOW IT WORKS
+    ========================= */
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .step-line {
+        display: none;
+    }
+
+    .step {
+        text-align: center;
+    }
+
+    .step-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* =========================
+       SHOWCASE
+    ========================= */
+
+    .showcase-container {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .showcase-content {
+        width: 100%;
+    }
+
+    .showcase-visual {
+        width: 100%;
+    }
+
+    .showcase-window {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 15px;
+    }
+
+    .stat strong {
+        font-size: 32px;
+    }
+
+
+    /* =========================
+       PRICING
+    ========================= */
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+
+
+    /* =========================
+       TESTIMONIALS
+    ========================= */
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       FAQ
+    ========================= */
+
+    .faq-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta-box {
+        padding: 45px 25px;
+    }
+
+    .cta-content h2 {
+        font-size: clamp(38px, 10vw, 54px);
+    }
+
+    .cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 420px) {
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .main-nav {
+        left: 16px;
+        right: 16px;
+    }
+
+    .hero {
+        padding-top: 65px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .dashboard-sidebar {
+        width: 48px;
+        flex-basis: 48px;
+    }
+
+    .dashboard-main {
+        padding: 13px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
