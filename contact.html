@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Contact Nexora — get in touch with our team."
+    >
+
+    <title>Contact — Nexora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================================
+           NEXORA CONTACT PAGE
+        ========================================= */
+
+        .contact-hero {
+            padding: 145px 0 75px;
+        }
+
+        .contact-hero-content {
+            max-width: 760px;
+        }
+
+        .contact-hero h1 {
+            margin: 25px 0;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(50px, 7vw, 88px);
+            line-height: .98;
+            letter-spacing: -0.055em;
+        }
+
+        .contact-hero h1 span {
+            display: block;
+        }
+
+        .contact-hero p {
+            max-width: 650px;
+            color: rgba(255,255,255,.6);
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        .contact-section {
+            padding: 40px 0 110px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 25px;
+            align-items: stretch;
+        }
+
+        .contact-info,
+        .contact-form-box {
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 24px;
+            background: rgba(255,255,255,.025);
+        }
+
+        .contact-info {
+            padding: 35px;
+        }
+
+        .contact-info h2,
+        .contact-form-box h2 {
+            margin: 0 0 12px;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 28px;
+            letter-spacing: -.03em;
+        }
+
+        .contact-info > p,
+        .contact-form-box > p {
+            color: rgba(255,255,255,.55);
+            line-height: 1.7;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 17px;
+
+            border: 1px solid rgba(255,255,255,.06);
+            border-radius: 16px;
+
+            background: rgba(255,255,255,.025);
+        }
+
+        .contact-method-icon {
+            width: 45px;
+            height: 45px;
+            flex: 0 0 45px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 13px;
+
+            background: rgba(139,92,246,.13);
+            color: #b995ff;
+        }
+
+        .contact-method strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        .contact-method span {
+            display: block;
+            color: rgba(255,255,255,.5);
+            font-size: 14px;
+        }
+
+        .contact-form-box {
+            padding: 35px;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255,255,255,.75);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            box-sizing: border-box;
+
+            padding: 14px 15px;
+
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 12px;
+
+            outline: none;
+
+            background: rgba(0,0,0,.18);
+            color: #fff;
+
+            font-family: inherit;
+            font-size: 15px;
+
+            transition:
+                border-color .2s ease,
+                background .2s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255,255,255,.3);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: rgba(164,125,255,.65);
+            background: rgba(0,0,0,.25);
+        }
+
+        .form-group textarea {
+            min-height: 145px;
+            resize: vertical;
+        }
+
+        .form-group select option {
+            background: #121119;
+            color: #fff;
+        }
+
+        .form-submit {
+            width: 100%;
+            justify-content: center;
+            border: 0;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .form-note {
+            margin-top: 12px;
+            text-align: center;
+            color: rgba(255,255,255,.35);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .contact-faq {
+            padding: 0 0 110px;
+        }
+
+        .contact-faq-heading {
+            max-width: 650px;
+            margin-bottom: 40px;
+        }
+
+        .contact-faq-heading h2 {
+            margin: 20px 0 0;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(38px, 5vw, 58px);
+            line-height: 1;
+            letter-spacing: -.045em;
+        }
+
+        .contact-faq-heading h2 span {
+            display: block;
+        }
+
+        .contact-faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .contact-faq-card {
+            padding: 25px;
+
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 18px;
+
+            background: rgba(255,255,255,.02);
+        }
+
+        .contact-faq-card h3 {
+            margin: 0 0 10px;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 18px;
+        }
+
+        .contact-faq-card p {
+            margin: 0;
+            color: rgba(255,255,255,.52);
+            line-height: 1.65;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+
+            .contact-hero {
+                padding: 100px 0 55px;
+            }
+
+            .contact-section {
+                padding-top: 20px;
+                padding-bottom: 75px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info,
+            .contact-form-box {
+                padding: 25px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .contact-faq {
+                padding-bottom: 75px;
+            }
+
+            .contact-faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 420px) {
+
+            .contact-hero h1 {
+                font-size: 52px;
+            }
+
+            .contact-info,
+            .contact-form-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container header-container">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">
+                <i class="fa-solid fa-bolt"></i>
+            </span>
+
+            <span class="logo-text">
+                Nexora
+            </span>
+
+        </a>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#features">
+                Features
+            </a>
+
+            <a href="index.html#pricing">
+                Pricing
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html" class="active">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <a
+                href="index.html#pricing"
+                class="btn btn-primary btn-small"
+            >
+                Get started
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="contact-hero">
+
+        <div class="container">
+
+            <div class="contact-hero-content">
+
+                <span class="eyebrow">
+                    Get in touch
+                </span>
+
+                <h1>
+                    Let's build
+                    <span>something better.</span>
+                </h1>
+
+                <p>
+                    Have a question, need help or want to learn
+                    more about Nexora? Send us a message and
+                    our team will get back to you.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CONTACT
+    ========================================== -->
+
+    <section class="contact-section">
+
+        <div class="container">
+
+            <div class="contact-grid">
+
+                <!-- CONTACT INFO -->
+
+                <div class="contact-info">
+
+                    <span class="eyebrow">
+                        Contact details
+                    </span>
+
+                    <h2>
+                        We're here to help.
+                    </h2>
+
+                    <p>
+                        Reach out through any of the channels
+                        below or use the contact form.
+                    </p>
+
+
+                    <div class="contact-methods">
+
+                        <div class="contact-method">
+
+                            <div class="contact-method-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <strong>Email</strong>
+                                <span>hello@nexora.example</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-method">
+
+                            <div class="contact-method-icon">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <strong>Response time</strong>
+                                <span>Usually within 24 hours</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-method">
+
+                            <div class="contact-method-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <strong>Availability</strong>
+                                <span>Worldwide · Remote team</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <div class="contact-form-box">
+
+                    <span class="eyebrow">
+                        Send a message
+                    </span>
+
+                    <h2>
+                        Tell us what you need.
+                    </h2>
+
+                    <p>
+                        Fill out the form and we'll get back
+                        to you as soon as possible.
+                    </p>
+
+
+                    <form
+                        class="contact-form"
+                        action="#"
+                        method="post"
+                    >
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Your name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Alex Morgan"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="alex@example.com"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <select
+                                id="subject"
+                                name="subject"
+                            >
+
+                                <option value="">
+                                    Choose a topic
+                                </option>
+
+                                <option value="general">
+                                    General question
+                                </option>
+
+                                <option value="support">
+                                    Product support
+                                </option>
+
+                                <option value="partnership">
+                                    Partnership
+                                </option>
+
+                                <option value="sales">
+                                    Sales
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Tell us a little about what you need..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary form-submit"
+                        >
+
+                            Send message
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <p class="form-note">
+                            Demo form — connect it to your preferred
+                            form service or backend.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FAQ
+    ========================================== -->
+
+    <section class="contact-faq">
+
+        <div class="container">
+
+            <div class="contact-faq-heading">
+
+                <span class="eyebrow">
+                    Before you write
+                </span>
+
+                <h2>
+                    Quick answers.
+                    <span>No waiting.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="contact-faq-grid">
+
+                <article class="contact-faq-card">
+
+                    <h3>
+                        How quickly will I get a response?
+                    </h3>
+
+                    <p>
+                        Most messages receive a response within
+                        one business day.
+                    </p>
+
+                </article>
+
+
+                <article class="contact-faq-card">
+
+                    <h3>
+                        Can I request a product demo?
+                    </h3>
+
+                    <p>
+                        Absolutely. Select Sales in the form
+                        and tell us what you'd like to see.
+                    </p>
+
+                </article>
+
+
+                <article class="contact-faq-card">
+
+                    <h3>
+                        Do you support custom integrations?
+                    </h3>
+
+                    <p>
+                        Nexora is designed with flexible
+                        integrations in mind. Contact us to
+                        discuss your requirements.
+                    </p>
+
+                </article>
+
+
+                <article class="contact-faq-card">
+
+                    <h3>
+                        Is the contact form connected?
+                    </h3>
+
+                    <p>
+                        This template includes a front-end demo
+                        form. Connect it to Formspree, Netlify
+                        Forms or your own backend.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+                    <footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-mark">
+                        <i class="fa-solid fa-bolt"></i>
+                    </span>
+
+                    <span class="logo-text">
+                        Nexora
+                    </span>
+
+                </a>
+
+                <p>
+                    AI-powered productivity for modern teams
+                    and ambitious businesses.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div class="footer-column">
+
+                    <h4>Product</h4>
+
+                    <a href="index.html#features">
+                        Features
+                    </a>
+
+                    <a href="index.html#pricing">
+                        Pricing
+                    </a>
+
+                    <a href="index.html#demo">
+                        Demo
+                    </a>
+
+                    <a href="index.html#faq">
+                        FAQ
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Company</h4>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                    <a href="#">
+                        Careers
+                    </a>
+
+                    <a href="#">
+                        Blog
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Legal</h4>
+
+                    <a href="#">
+                        Privacy
+                    </a>
+
+                    <a href="#">
+                        Terms
+                    </a>
+
+                    <a href="#">
+                        Security
+                    </a>
+
+                    <a href="#">
+                        Status
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span data-year></span>
+                Nexora. All rights reserved.
+            </span>
+
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+                    </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
