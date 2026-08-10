@@ -7,7 +7,7 @@
 
     <meta
         name="description"
-        content="Nexora is a modern AI SaaS landing page template designed for startups, AI products and digital businesses."
+        content="Nexora is a modern AI SaaS landing page template for startups, AI products and digital businesses."
     >
 
     <meta
@@ -30,7 +30,7 @@
         rel="stylesheet"
     >
 
-    <!-- Icons -->
+    <!-- Font Awesome -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -42,298 +42,380 @@
 
 <body>
 
-    <!-- ================================
-         HEADER
-    ================================= -->
+<!-- =========================================
+     HEADER
+========================================= -->
 
-    <header class="site-header" id="header">
+<header class="site-header" id="header">
 
-        <div class="container header-container">
+    <div class="container header-container">
 
-            <a href="#home" class="logo">
-                <span class="logo-mark">
-                    <i class="fa-solid fa-bolt"></i>
-                </span>
+        <a href="#home" class="logo">
 
-                <span class="logo-text">Nexora</span>
+            <span class="logo-mark">
+                <i class="fa-solid fa-bolt"></i>
+            </span>
+
+            <span class="logo-text">
+                Nexora
+            </span>
+
+        </a>
+
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="#home">Home</a>
+
+            <a href="#features">Features</a>
+
+            <a href="#how-it-works">How it works</a>
+
+            <a href="#pricing">Pricing</a>
+
+            <a href="#faq">FAQ</a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <a href="#login" class="login-link">
+                Log in
             </a>
 
+            <a
+                href="#pricing"
+                class="btn btn-primary btn-small"
+            >
+                Get started
+            </a>
 
-            <nav class="main-nav" id="mainNav">
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                type="button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-                <a href="#home">Home</a>
+        </div>
 
-                <a href="#features">Features</a>
+    </div>
 
-                <a href="#how-it-works">How it works</a>
-
-                <a href="#pricing">Pricing</a>
-
-                <a href="#faq">FAQ</a>
-
-            </nav>
+</header>
 
 
-            <div class="header-actions">
+<main>
 
-                <a href="#login" class="login-link">
-                    Log in
-                </a>
 
-                <a href="#pricing" class="btn btn-primary btn-small">
-                    Get started
-                </a>
+<!-- =========================================
+     HERO
+========================================= -->
 
-                <button
-                    class="menu-toggle"
-                    id="menuToggle"
-                    aria-label="Open navigation menu"
-                    aria-expanded="false"
+<section class="hero section" id="home">
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+
+                <span class="badge-dot"></span>
+
+                AI-powered productivity platform
+
+            </div>
+
+
+            <h1>
+
+                Work smarter.
+
+                <span>
+                    Build faster.
+                </span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                Nexora helps modern teams automate repetitive work,
+                turn ideas into action and make better decisions
+                with the power of AI.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a
+                    href="#pricing"
+                    class="btn btn-primary"
                 >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+
+                    Start for free
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <a
+                    href="#demo"
+                    class="btn btn-secondary"
+                >
+
+                    <i class="fa-solid fa-play"></i>
+
+                    Watch demo
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-note">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                No credit card required
 
             </div>
 
         </div>
 
-    </header>
+
+        <!-- HERO DASHBOARD -->
+
+        <div class="hero-visual">
+
+            <div class="glow glow-one"></div>
+
+            <div class="glow glow-two"></div>
 
 
-    <main>
+            <div class="dashboard-window">
 
-        <!-- ================================
-             HERO
-        ================================= -->
+                <div class="window-top">
 
-        <section class="hero section" id="home">
+                    <div class="window-dots">
 
-            <div class="container hero-container">
-
-                <div class="hero-content">
-
-                    <div class="hero-badge">
-                        <span class="badge-dot"></span>
-
-                        AI-powered productivity platform
-                    </div>
-
-
-                    <h1>
-                        Work smarter.
-                        <span>Build faster.</span>
-                    </h1>
-
-
-                    <p class="hero-description">
-                        Nexora helps modern teams automate repetitive work,
-                        turn ideas into action and make better decisions
-                        with the power of AI.
-                    </p>
-
-
-                    <div class="hero-actions">
-
-                        <a href="#pricing" class="btn btn-primary">
-                            Start for free
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                        <a href="#demo" class="btn btn-secondary">
-                            <i class="fa-solid fa-play"></i>
-                            Watch demo
-                        </a>
+                        <span></span>
+                        <span></span>
+                        <span></span>
 
                     </div>
 
-
-                    <div class="hero-note">
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        No credit card required
+                    <div class="window-title">
+                        Nexora AI
                     </div>
 
                 </div>
 
 
-                <!-- Hero visual -->
+                <div class="dashboard-content">
 
-                <div class="hero-visual">
+                    <aside class="dashboard-sidebar">
 
-                    <div class="glow glow-one"></div>
-                    <div class="glow glow-two"></div>
+                        <div class="sidebar-brand">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
 
 
-                    <div class="dashboard-window">
+                        <a
+                            href="#"
+                            class="sidebar-item active"
+                            aria-label="Dashboard"
+                        >
+                            <i class="fa-solid fa-table-cells-large"></i>
+                        </a>
 
-                        <div class="window-top">
 
-                            <div class="window-dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                        <a
+                            href="#"
+                            class="sidebar-item"
+                            aria-label="Analytics"
+                        >
+                            <i class="fa-solid fa-chart-line"></i>
+                        </a>
+
+
+                        <a
+                            href="#"
+                            class="sidebar-item"
+                            aria-label="Projects"
+                        >
+                            <i class="fa-solid fa-folder"></i>
+                        </a>
+
+
+                        <a
+                            href="#"
+                            class="sidebar-item"
+                            aria-label="Team"
+                        >
+                            <i class="fa-solid fa-users"></i>
+                        </a>
+
+
+                        <a
+                            href="#"
+                            class="sidebar-item"
+                            aria-label="Settings"
+                        >
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+
+                    </aside>
+
+
+                    <div class="dashboard-main">
+
+                        <div class="dashboard-header">
+
+                            <div>
+
+                                <span class="dashboard-label">
+                                    Overview
+                                </span>
+
+                                <h3>
+                                    Good morning, Alex
+                                </h3>
+
                             </div>
 
-                            <div class="window-title">
-                                Nexora AI
+
+                            <div class="avatar">
+                                A
                             </div>
 
                         </div>
 
 
-                        <div class="dashboard-content">
+                        <div class="dashboard-stats">
 
-                            <aside class="dashboard-sidebar">
+                            <div class="stat-card">
 
-                                <div class="sidebar-brand">
-                                    <i class="fa-solid fa-bolt"></i>
-                                </div>
+                                <span>
+                                    Tasks completed
+                                </span>
 
-                                <a href="#" class="sidebar-item active">
-                                    <i class="fa-solid fa-grid-2"></i>
-                                </a>
+                                <strong>
+                                    1,284
+                                </strong>
 
-                                <a href="#" class="sidebar-item">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                </a>
-
-                                <a href="#" class="sidebar-item">
-                                    <i class="fa-solid fa-folder"></i>
-                                </a>
-
-                                <a href="#" class="sidebar-item">
-                                    <i class="fa-solid fa-users"></i>
-                                </a>
-
-                                <a href="#" class="sidebar-item">
-                                    <i class="fa-solid fa-gear"></i>
-                                </a>
-
-                            </aside>
-
-
-                            <div class="dashboard-main">
-
-                                <div class="dashboard-header">
-
-                                    <div>
-                                        <span class="dashboard-label">
-                                            Overview
-                                        </span>
-
-                                        <h3>
-                                            Good morning, Alex
-                                        </h3>
-                                    </div>
-
-                                    <div class="avatar">
-                                        A
-                                    </div>
-
-                                </div>
-
-
-                                <div class="dashboard-stats">
-
-                                    <div class="stat-card">
-
-                                        <span>
-                                            Tasks completed
-                                        </span>
-
-                                        <strong>
-                                            1,284
-                                        </strong>
-
-                                        <small>
-                                            <i class="fa-solid fa-arrow-up"></i>
-                                            18.4%
-                                        </small>
-
-                                    </div>
-
-
-                                    <div class="stat-card">
-
-                                        <span>
-                                            Time saved
-                                        </span>
-
-                                        <strong>
-                                            42.8h
-                                        </strong>
-
-                                        <small>
-                                            <i class="fa-solid fa-arrow-up"></i>
-                                            24.6%
-                                        </small>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="chart-card">
-
-                                    <div class="chart-header">
-
-                                        <div>
-                                            <span>
-                                                Productivity
-                                            </span>
-
-                                            <strong>
-                                                +32.8%
-                                            </strong>
-                                        </div>
-
-                                        <select aria-label="Chart period">
-                                            <option>Last 7 days</option>
-                                            <option>Last 30 days</option>
-                                            <option>Last 90 days</option>
-                                        </select>
-
-                                    </div>
-
-
-                                    <div class="chart">
-
-                                        <div class="chart-line"></div>
-
-                                        <div class="chart-grid"></div>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="ai-card">
-
-                                    <div class="ai-icon">
-                                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                    </div>
-
-                                    <div>
-
-                                        <strong>
-                                            AI assistant
-                                        </strong>
-
-                                        <p>
-                                            Your weekly report is ready.
-                                        </p>
-
-                                    </div>
-
-                                    <button aria-label="Open AI assistant">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </button>
-
-                                </div>
+                                <small>
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                    18.4%
+                                </small>
 
                             </div>
+
+
+                            <div class="stat-card">
+
+                                <span>
+                                    Time saved
+                                </span>
+
+                                <strong>
+                                    42.8h
+                                </strong>
+
+                                <small>
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                    24.6%
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="chart-card">
+
+                            <div class="chart-header">
+
+                                <div>
+
+                                    <span>
+                                        Productivity
+                                    </span>
+
+                                    <strong>
+                                        +32.8%
+                                    </strong>
+
+                                </div>
+
+
+                                <select aria-label="Chart period">
+
+                                    <option>
+                                        Last 7 days
+                                    </option>
+
+                                    <option>
+                                        Last 30 days
+                                    </option>
+
+                                    <option>
+                                        Last 90 days
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="chart">
+
+                                <div class="chart-line"></div>
+
+                                <div class="chart-grid"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ai-card">
+
+                            <div class="ai-icon">
+
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    AI assistant
+                                </strong>
+
+                                <p>
+                                    Your weekly report is ready.
+                                </p>
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                aria-label="Open AI assistant"
+                            >
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </button>
 
                         </div>
 
@@ -343,352 +425,1533 @@
 
             </div>
 
+        </div>
 
-            <div class="hero-scroll">
+    </div>
+
+
+    <div class="hero-scroll">
+
+        <span>
+            Scroll to explore
+        </span>
+
+        <i class="fa-solid fa-arrow-down"></i>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     TRUSTED
+========================================= -->
+
+<section class="trusted section-small">
+
+    <div class="container">
+
+        <p class="trusted-title">
+            Trusted by forward-thinking teams
+        </p>
+
+
+        <div class="trusted-logos">
+
+            <span>
+                <i class="fa-solid fa-cube"></i>
+                Vertex
+            </span>
+
+            <span>
+                <i class="fa-solid fa-circle-nodes"></i>
+                Orbit
+            </span>
+
+            <span>
+                <i class="fa-solid fa-layer-group"></i>
+                Layer
+            </span>
+
+            <span>
+                <i class="fa-solid fa-wave-square"></i>
+                Pulse
+            </span>
+
+            <span>
+                <i class="fa-solid fa-shapes"></i>
+                Forma
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FEATURES
+========================================= -->
+
+<section
+    class="features section"
+    id="features"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                Powerful by design
+            </span>
+
+            <h2>
+
+                Everything your team needs
 
                 <span>
-                    Scroll to explore
+                    to move faster.
                 </span>
 
-                <i class="fa-solid fa-arrow-down"></i>
-
-            </div>
-
-        </section>
+            </h2>
 
 
-        <!-- ================================
-             TRUSTED BY
-        ================================= -->
+            <p>
 
-        <section class="trusted section-small">
+                Replace repetitive workflows with intelligent
+                automation and give your team more time to focus
+                on meaningful work.
 
-            <div class="container">
+            </p>
 
-                <p class="trusted-title">
-                    Trusted by forward-thinking teams
+        </div>
+
+
+        <div class="features-grid">
+
+
+            <article class="feature-card feature-large">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                </div>
+
+
+                <h3>
+                    AI-powered automation
+                </h3>
+
+
+                <p>
+
+                    Automate repetitive tasks and let AI handle
+                    the busywork while your team focuses on
+                    what really matters.
+
                 </p>
 
 
-                <div class="trusted-logos">
+                <div class="feature-visual automation-visual">
+
+                    <div class="automation-line">
+
+                        <span></span>
+
+                        <div></div>
+
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="automation-label">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Workflow completed
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-chart-simple"></i>
+
+                </div>
+
+
+                <h3>
+                    Real-time insights
+                </h3>
+
+
+                <p>
+
+                    Turn your data into clear insights with
+                    intelligent analytics and simple dashboards.
+
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+
+                <h3>
+                    Built for teams
+                </h3>
+
+
+                <p>
+
+                    Collaborate, share projects and keep everyone
+                    aligned from one beautiful workspace.
+
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+
+                <h3>
+                    Secure by default
+                </h3>
+
+
+                <p>
+
+                    Enterprise-ready security keeps your
+                    workspace and customer data protected.
+
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-plug"></i>
+
+                </div>
+
+
+                <h3>
+                    Connect your tools
+                </h3>
+
+
+                <p>
+
+                    Integrate your favorite tools and create
+                    workflows that fit the way your team works.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     HOW IT WORKS
+========================================= -->
+
+<section
+    class="how-it-works section"
+    id="how-it-works"
+>
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="eyebrow">
+                Simple workflow
+            </span>
+
+            <h2>
+
+                From idea to result
+
+                <span>
+                    in three steps.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="steps-grid">
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+
+                <div class="step-icon">
+
+                    <i class="fa-solid fa-pen-nib"></i>
+
+                </div>
+
+
+                <h3>
+                    Create
+                </h3>
+
+
+                <p>
+
+                    Describe what you need and let Nexora
+                    turn your idea into an actionable workflow.
+
+                </p>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+
+                <div class="step-icon">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                </div>
+
+
+                <h3>
+                    Automate
+                </h3>
+
+
+                <p>
+
+                    Connect your tools and let AI handle the
+                    repetitive parts of your workflow.
+
+                </p>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+
+                <div class="step-icon">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+
+                <h3>
+                    Grow
+                </h3>
+
+
+                <p>
+
+                    Track results, discover insights and
+                    continuously improve your processes.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     SHOWCASE
+========================================= -->
+
+<section
+    class="showcase section"
+    id="demo"
+>
+
+    <div class="container showcase-container">
+
+
+        <div class="showcase-content">
+
+            <span class="eyebrow">
+                Designed for clarity
+            </span>
+
+
+            <h2>
+
+                Your entire workflow.
+
+                <span>
+                    One intelligent workspace.
+                </span>
+
+            </h2>
+
+
+            <p>
+
+                Bring projects, automation, analytics and
+                collaboration together in one focused workspace.
+
+            </p>
+
+
+            <ul class="check-list">
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Smart task automation
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    AI-powered insights
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Real-time collaboration
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Custom workflow builder
+
+                </li>
+
+            </ul>
+
+
+            <a
+                href="#pricing"
+                class="text-link"
+            >
+
+                Explore plans
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <!-- SHOWCASE WINDOW -->
+           <div class="showcase-visual">
+
+            <div class="showcase-window">
+
+                <div class="showcase-header">
+
+                    <div>
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
 
                     <span>
-                        <i class="fa-solid fa-cube"></i>
-                        Vertex
+                        Workspace
                     </span>
 
-                    <span>
-                        <i class="fa-solid fa-circle-nodes"></i>
-                        Orbit
-                    </span>
+                </div>
 
-                    <span>
-                        <i class="fa-solid fa-layer-group"></i>
-                        Layer
-                    </span>
 
-                    <span>
-                        <i class="fa-solid fa-wave-square"></i>
-                        Pulse
-                    </span>
+                <div class="workspace-content">
 
-                    <span>
-                        <i class="fa-solid fa-shapes"></i>
-                        Forma
-                    </span>
+
+                    <aside class="workspace-sidebar">
+
+                        <div class="workspace-item active"></div>
+
+                        <div class="workspace-item"></div>
+
+                        <div class="workspace-item"></div>
+
+                        <div class="workspace-item"></div>
+
+                        <div class="workspace-item"></div>
+
+                    </aside>
+
+
+                    <div class="workspace-main">
+
+                        <div class="workspace-title"></div>
+
+
+                        <div class="workspace-cards">
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                        </div>
+
+
+                        <div class="workspace-chart">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+    </div>
+
+</section>
+    
+<!-- =========================================
+     STATS
+========================================= -->
+
+<section class="stats section-small">
+
+    <div class="container">
+
+        <div class="stats-grid">
 
 
-        <!-- ================================
-             FEATURES
-        ================================= -->
+            <div class="stat">
 
-        <section class="features section" id="features">
+                <strong>
+                    10k+
+                </strong>
 
-            <div class="container">
+                <span>
+                    Active users
+                </span>
 
-                <div class="section-heading">
+            </div>
 
-                    <span class="eyebrow">
-                        Powerful by design
-                    </span>
 
-                    <h2>
-                        Everything your team needs
-                        <span>to move faster.</span>
-                    </h2>
+            <div class="stat">
+
+                <strong>
+                    98.7%
+                </strong>
+
+                <span>
+                    Customer satisfaction
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong>
+                    42%
+                </strong>
+
+                <span>
+                    Average time saved
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong>
+                    24/7
+                </strong>
+
+                <span>
+                    AI-powered workflows
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     PRICING
+========================================= -->
+
+<section
+    class="pricing section"
+    id="pricing"
+>
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="eyebrow">
+                Simple pricing
+            </span>
+
+
+            <h2>
+
+                Start small.
+
+                <span>
+                    Scale when ready.
+                </span>
+
+            </h2>
+
+
+            <p>
+
+                Flexible plans designed for individuals,
+                growing teams and ambitious companies.
+
+            </p>
+
+        </div>
+
+
+        <div class="pricing-grid">
+
+
+            <!-- STARTER -->
+
+            <article class="pricing-card">
+
+                <div class="pricing-top">
+
+                    <div class="pricing-name">
+                        Starter
+                    </div>
 
                     <p>
-                        Replace repetitive workflows with intelligent
-                        automation and give your team more time to focus
-                        on meaningful work.
+                        For individuals getting started.
                     </p>
 
                 </div>
 
 
-                <div class="features-grid">
+                <div class="price">
 
-                    <article class="feature-card feature-large">
+                    <strong>
+                        $0
+                    </strong>
 
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
-                        </div>
-
-                        <h3>
-                            AI-powered automation
-                        </h3>
-
-                        <p>
-                            Automate repetitive tasks and let AI handle
-                            the busywork while your team focuses on
-                            what really matters.
-                        </p>
-
-                        <div class="feature-visual automation-visual">
-
-                            <div class="automation-line">
-                                <span></span>
-                                <div></div>
-                                <span></span>
-                            </div>
-
-                            <div class="automation-label">
-                                <i class="fa-solid fa-check"></i>
-                                Workflow completed
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-chart-simple"></i>
-                        </div>
-
-                        <h3>
-                            Real-time insights
-                        </h3>
-
-                        <p>
-                            Turn your data into clear insights with
-                            intelligent analytics and simple dashboards.
-                        </p>
-
-                    </article>
-
-
-                    <article class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-users"></i>
-                        </div>
-
-                        <h3>
-                            Built for teams
-                        </h3>
-
-                        <p>
-                            Collaborate, share projects and keep everyone
-                            aligned from one beautiful workspace.
-                        </p>
-
-                    </article>
-
-
-                    <article class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-
-                        <h3>
-                            Secure by default
-                        </h3>
-
-                        <p>
-                            Enterprise-ready security keeps your
-                            workspace and customer data protected.
-                        </p>
-
-                    </article>
-
-
-                    <article class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-plug"></i>
-                        </div>
-
-                        <h3>
-                            Connect your tools
-                        </h3>
-
-                        <p>
-                            Integrate your favorite tools and create
-                            workflows that fit the way your team works.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================================
-             HOW IT WORKS
-        ================================= -->
-
-        <section class="how-it-works section" id="how-it-works">
-
-            <div class="container">
-
-                <div class="section-heading centered">
-
-                    <span class="eyebrow">
-                        Simple workflow
+                    <span>
+                        / month
                     </span>
 
-                    <h2>
-                        From idea to result
-                        <span>in three steps.</span>
-                    </h2>
-
                 </div>
 
 
-                <div class="steps-grid">
-
-                    <div class="step">
-
-                        <div class="step-number">
-                            01
-                        </div>
-
-                        <div class="step-icon">
-                            <i class="fa-solid fa-pen-nib"></i>
-                        </div>
-
-                        <h3>
-                            Create
-                        </h3>
-
-                        <p>
-                            Describe what you need and let Nexora
-                            turn your idea into an actionable workflow.
-                        </p>
-
-                    </div>
+                <a
+                    href="#login"
+                    class="btn btn-secondary full-width"
+                >
+                    Get started
+                </a>
 
 
-                    <div class="step-line"></div>
+                <ul class="pricing-features">
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        3 active workflows
+
+                    </li>
 
 
-                    <div class="step">
+                    <li>
 
-                        <div class="step-number">
-                            02
-                        </div>
+                        <i class="fa-solid fa-check"></i>
 
-                        <div class="step-icon">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
-                        </div>
+                        Basic AI automation
 
-                        <h3>
-                            Automate
-                        </h3>
-
-                        <p>
-                            Connect your tools and let AI handle the
-                            repetitive parts of your workflow.
-                        </p>
-
-                    </div>
+                    </li>
 
 
-                    <div class="step-line"></div>
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        1 workspace
+
+                    </li>
 
 
-                    <div class="step">
+                    <li>
 
-                        <div class="step-number">
-                            03
-                        </div>
+                        <i class="fa-solid fa-check"></i>
 
-                        <div class="step-icon">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </div>
+                        Community support
 
-                        <h3>
-                            Grow
-                        </h3>
+                    </li>
 
-                        <p>
-                            Track results, discover insights and
-                            continuously improve your processes.
-                        </p>
+                </ul>
 
-                    </div>
+            </article>
 
+                     <!-- PRO -->
+
+            <article class="pricing-card featured">
+
+                <div class="popular-badge">
+                    Most popular
                 </div>
 
-            </div>
 
-        </section>
+                <div class="pricing-top">
 
-
-        <!-- ================================
-             DEMO / SHOWCASE
-        ================================= -->
-
-        <section class="showcase section" id="demo">
-
-            <div class="container showcase-container">
-
-                <div class="showcase-content">
-
-                    <span class="eyebrow">
-                        Designed for clarity
-                    </span>
-
-                    <h2>
-                        Your entire workflow.
-                        <span>One intelligent workspace.</span>
-                    </h2>
+                    <div class="pricing-name">
+                        Pro
+                    </div>
 
                     <p>
-                        Bring projects, automation, analytics and
-                        collaboration together in one focused workspace.
+                        For growing teams and creators.
                     </p>
 
+                </div>
 
-                    <ul class="check-list">
 
-                        <li>
-                            <i class="fa-solid fa-circle-check"></i>
-                            Smart task automation
-                        </li>
+                <div class="price">
 
-                        <li>
-                            <i class="fa-solid fa-circle-check"></i>
-                            AI-powered insights
-                        </li>
+                    <strong>
+                        $29
+                    </strong>
 
-                        <li>
-                            <i class="fa-solid fa-circle-check"></i>
-                            Real-time collaboration
-                        </li>
+                    <span>
+                        / month
+                    </span>
 
-                        <li>
-             
+                </div>
+
+
+                <a
+                    href="#login"
+                    class="btn btn-primary full-width"
+                >
+                    Start free trial
+                </a>
+
+
+                <ul class="pricing-features">
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Unlimited workflows
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Advanced AI automation
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Unlimited projects
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Analytics and insights
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Priority support
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- BUSINESS -->
+
+            <article class="pricing-card">
+
+                <div class="pricing-top">
+
+                    <div class="pricing-name">
+                        Business
+                    </div>
+
+                    <p>
+                        For companies that need more.
+                    </p>
+
+                </div>
+
+
+                <div class="price">
+
+                    <strong>
+                        $79
+                    </strong>
+
+                    <span>
+                        / month
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="#login"
+                    class="btn btn-secondary full-width"
+                >
+                    Contact sales
+                </a>
+
+
+                <ul class="pricing-features">
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Everything in Pro
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Advanced permissions
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Team management
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Custom integrations
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Dedicated support
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- =========================================
+     TESTIMONIALS
+========================================= -->
+
+<section class="testimonials section">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="eyebrow">
+                Customer stories
+            </span>
+
+
+            <h2>
+
+                Less busywork.
+
+                <span>
+                    More meaningful work.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="testimonials-grid">
+
+
+            <article class="testimonial-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+
+                <blockquote>
+
+                    “Nexora helped our team remove hours of
+                    repetitive work every week. The workflow
+                    automation is incredibly easy to use.”
+
+                </blockquote>
+
+
+                <div class="testimonial-author">
+
+                    <div class="author-avatar">
+                        JM
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Jordan Miller
+                        </strong>
+
+                        <span>
+                            Product Lead
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="testimonial-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+
+                <blockquote>
+
+                    “The interface is clean, fast and genuinely
+                    enjoyable to work with. Our entire team
+                    adopted it within days.”
+
+                </blockquote>
+
+
+                <div class="testimonial-author">
+
+                    <div class="author-avatar">
+                        SK
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Sarah Kim
+                        </strong>
+
+                        <span>
+                            Growth Manager
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="testimonial-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+
+                <blockquote>
+
+                    “We finally have one place for automation,
+                    analytics and collaboration. It has changed
+                    how our team works.”
+
+                </blockquote>
+
+
+                <div class="testimonial-author">
+
+                    <div class="author-avatar">
+                        AR
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Alex Rivera
+                        </strong>
+
+                        <span>
+                            Founder
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- =========================================
+     FAQ
+========================================= -->
+
+<section
+    class="faq section"
+    id="faq"
+>
+
+    <div class="container faq-container">
+
+
+        <div class="faq-intro">
+
+            <span class="eyebrow">
+                Questions
+            </span>
+
+
+            <h2>
+
+                Everything you need
+                <span>to know.</span>
+
+            </h2>
+
+
+            <p>
+                Can't find your answer? Our support team
+                is ready to help.
+            </p>
+
+        </div>
+
+
+        <div class="faq-list">
+
+
+            <div class="faq-item active">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="true"
+                >
+
+                    Is Nexora free to use?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Yes. Nexora includes a free Starter plan
+                        so you can explore the core features before
+                        upgrading to a paid plan.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    Do I need technical skills?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        No. Nexora is designed to be easy to use.
+                        You can create workflows and automate tasks
+                        without writing code.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    Can I cancel at any time?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Yes. There are no long-term contracts.
+                        You can change or cancel your plan whenever
+                        you need.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    Does Nexora integrate with other tools?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Nexora is designed around flexible
+                        integrations, allowing teams to connect
+                        the tools they already use.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    Is there a free trial for Pro?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Yes. You can try the Pro experience before
+                        committing to a paid subscription.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- =========================================
+     CTA
+========================================= -->
+
+<section class="section-small">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-glow"></div>
+
+
+            <div class="cta-content">
+
+                <span class="eyebrow">
+                    Start today
+                </span>
+
+
+                <h2>
+
+                    Build more.
+
+                    <span>
+                        Do less busywork.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Give your team an intelligent workspace
+                    built for faster, better work.
+
+                </p>
+
+
+                <div class="cta-actions">
+
+                    <a
+                        href="#pricing"
+                        class="btn btn-primary"
+                    >
+
+                        Start for free
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#demo"
+                        class="btn btn-secondary"
+                    >
+
+                        Explore demo
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+        <!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+
+        <div class="footer-top">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="#home"
+                    class="logo"
+                >
+
+                    <span class="logo-mark">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                    </span>
+
+
+                    <span class="logo-text">
+                        Nexora
+                    </span>
+
+                </a>
+
+
+                <p>
+
+                    AI-powered productivity for
+                    modern teams and ambitious businesses.
+
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Product
+                    </h4>
+
+                    <a href="#features">
+                        Features
+                    </a>
+
+                    <a href="#pricing">
+                        Pricing
+                    </a>
+
+                    <a href="#demo">
+                        Demo
+                    </a>
+
+                    <a href="#faq">
+                        FAQ
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Company
+                    </h4>
+
+                    <a href="#about">
+                        About
+                    </a>
+
+                    <a href="#careers">
+                        Careers
+                    </a>
+
+                    <a href="#contact">
+                        Contact
+                    </a>
+
+                    <a href="#blog">
+                        Blog
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Legal
+                    </h4>
+
+                    <a href="#privacy">
+                        Privacy
+                    </a>
+
+                    <a href="#terms">
+                        Terms
+                    </a>
+
+                    <a href="#security">
+                        Security
+                    </a>
+
+                    <a href="#status">
+                        Status
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+
+            <span>
+
+                © <span data-year></span>
+                Nexora. All rights reserved.
+
+            </span>
+
+
+            <div class="social-links">
+
+                <a
+                    href="#"
+                    aria-label="Twitter"
+                >
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+               <!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
